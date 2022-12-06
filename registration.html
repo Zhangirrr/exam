@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="background-image: url('images/texture-1457392_960_720.jpg'); background-position: center; background-size: cover;">
+    <div id="register_div">
+        <h1>Register Page</h1>
+        <input type="text" id="email_input" placeholder="Your Email" >          
+        <input type="text" id="password_input" placeholder="Create Password">
+        <button id="btn">Sign Up</button>
+    </div>
+
+    <div id="modal">
+        <div id="modal_content">
+            <h2>Check your Email</h2>
+            <input type="text" id="verify_input" placeholder="Enter verification code">
+            <button id="verify_btn">Verify</button>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+    emailjs.init("malHTLc-VPnot-doV");
+    })();
+</script>
+
+    <script src="registration.js"></script>
+</body>
+</html>

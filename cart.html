@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <section class="top_bar">
+            <div class="about_top_bar">
+                <h1>Корзина</h1>
+            </div>
+            <div class="info_top_bar">
+                <p>Круглосуточно горячая линия <span><a href="!">87777628705</a></span></p>
+            </div>
+        </section>
+        <section class="header_nav">
+            <select id="select"></select>
+            <input type="text" id="search_input">
+            <div class="icons">
+                <div class="icons_div">
+                    <a href="index.html" id="cart">
+                        <div class="cart_div">
+                            <img src="images/485381.png" alt="">
+                        </div>
+                        <span>Каталог</span>
+                    </a>
+                    <button onclick="cartBuy" id="cart_buy">
+                        <div class="cart_div">
+                            <img src="images/icons8-оплатить-картой-50.png" alt="">
+                        </div>
+                        <span>оплатить</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div id="all_products">
+
+        </div>
+    </main>
+
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+    emailjs.init("malHTLc-VPnot-doV");
+    })();
+</script>
+
+    <script src="cart.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <h4 style="width:100%; text-align: center"> -->
+<!-- Total price: <span id="total_price" class="price"></span> -->
+    <!-- </h4> -->
+
